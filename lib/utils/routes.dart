@@ -1,4 +1,6 @@
 class MyRoutes {
-  static String home = '/';
+  static String splash = '/';
+  static String simpleCal = "/simpleCal";
   static String converter = '/converter';
+  // static String
 }
