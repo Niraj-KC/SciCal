@@ -25,9 +25,9 @@ class Keyboard extends StatelessWidget {
                 children: [
                   Expanded(child: CircularBtn(disp: "AC",onTap: callback,color: Colors.white,colordisp: Colors.orangeAccent,)),
                   // SizedBox(width: 15,) ,
-                  Expanded(child: CircularBtn(disp: "( )",onTap: callback,color: Colors.white,colordisp: Colors.grey,)),
+                  Expanded(child: CircularBtn(disp: "(",onTap: callback,color: Colors.white,colordisp: Colors.grey,)),
                   // SizedBox(width: 15,) ,
-                  Expanded(child: CircularBtn(disp: "%",onTap: callback,color: Colors.white,colordisp: Colors.grey,)),
+                  Expanded(child: CircularBtn(disp: ")",onTap: callback,color: Colors.white,colordisp: Colors.grey,)),
                   // SizedBox(width: 15,) ,
                   Expanded(child: CircularBtn(disp: "/",onTap: callback,color: Colors.white,colordisp: Colors.grey,)),
                 ],
@@ -80,7 +80,7 @@ class Keyboard extends StatelessWidget {
             Expanded(
               child: Row(
                 children: [
-                  Expanded(child: CircularBtn(disp: "+/-",onTap: callback,color: Colors.black,colordisp: Colors.grey,)),
+                  Expanded(child: CircularBtn(disp: "%",onTap: callback,color: Colors.black,colordisp: Colors.grey,)),
 
                   Expanded(child: CircularBtn(disp: "0",onTap: callback,color: Colors.black,colordisp: Colors.grey,)),
 
