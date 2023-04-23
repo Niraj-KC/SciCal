@@ -187,10 +187,13 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
                 InkWell(
 
                   onTap: (){callback("<");},
-                  child: const Icon(
-                    Icons.backspace_outlined,
-                    color: Colors.yellowAccent,
-                    size: 40,
+                  child: Padding(
+                    padding: const EdgeInsets.only(right: 18.0),
+                    child: const Icon(
+                      Icons.backspace_outlined,
+                      color: Colors.yellowAccent,
+                      size: 25,
+                    ),
                   ),
                 ),
 
