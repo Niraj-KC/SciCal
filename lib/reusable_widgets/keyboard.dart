@@ -23,7 +23,7 @@ class Keyboard extends StatelessWidget {
             Expanded(
               child: Row(
                 children: [
-                  Expanded(child: CircularBtn(disp: "A",onTap: callback,color: Colors.white,colordisp: Colors.orangeAccent,)),
+                  Expanded(child: CircularBtn(disp: "AC",onTap: callback,color: Colors.white,colordisp: Colors.orangeAccent,)),
                   // SizedBox(width: 15,) ,
                   Expanded(child: CircularBtn(disp: "(",onTap: callback,color: Colors.white,colordisp: Colors.grey,)),
                   // SizedBox(width: 15,) ,
