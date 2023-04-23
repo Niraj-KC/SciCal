@@ -6,12 +6,12 @@ class CircularBtn extends StatelessWidget {
   final void Function(String) onTap;
   bool isIcon;
   Color color ;
-  Color colordisp ;
+  Color bgcolor ;
 
   CircularBtn({
     required this.disp,
     required this.onTap,
-    required this.colordisp,
+    required this.bgcolor,
     this.isIcon = false,
     this.color  = Colors.black,
 
@@ -23,7 +23,7 @@ class CircularBtn extends StatelessWidget {
       return InkWell(
         onTap: () {onTap(disp);},
         child: CircleAvatar(
-          backgroundColor: colordisp,
+          backgroundColor: bgcolor,
           radius: MediaQuery.of(context).size.width*10/100 ,
           child: isIcon
           ?Icon(

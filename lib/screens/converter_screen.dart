@@ -1,7 +1,9 @@
+import 'package:calculator/reusable_widgets/keyboard_convert.dart';
 import 'package:calculator/reusable_widgets/my_dropdown_btn.dart';
 import 'package:calculator/utils/calculation.dart';
 import 'package:flutter/material.dart';
 
+import '../Widgets/drawer.dart';
 import '../reusable_widgets/circular_btn.dart';
 import '../reusable_widgets/keyboard.dart';
 
@@ -28,6 +30,7 @@ class _ConverterScreenState extends State<ConverterScreen> {
         elevation: 0,
         backgroundColor: Colors.black,
       ),
+      drawer: AppDrawer(),
 
       body: Container(
         color: Colors.black,
@@ -92,7 +95,7 @@ class _ConverterScreenState extends State<ConverterScreen> {
               ],
             ),
 
-            Keyboard(callback: callback,),
+            KeyboardConvert(callback: callback,),
           ],
         ),
       )

@@ -1,5 +1,6 @@
 import 'package:calculator/utils/calculation.dart';
 import 'package:flutter/material.dart' ;
+import '../Widgets/drawer.dart';
 import '../reusable_widgets/keyboard.dart';
 import 'package:math_expressions/math_expressions.dart';
 
@@ -58,103 +59,7 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
         appBar: AppBar(
            backgroundColor: Colors.black45,
         ),
-        drawer: Drawer(
-          child: Container(
-            color: Colors.black,
-            child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  DrawerHeader(
-                      child: Container(
-                    color: Colors.red,
-                      )
-                  ) ,
-                  InkWell(
-                    child: ListTile(
-                      title: Text("Standard Calculator",style: TextStyle(fontSize: 20,color: Colors.white),),
-                    ),
-                    onTap: (){
-                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>SimpleCalculator())) ;
-                    },
-                  ) ,
-                  Divider(color: Colors.grey,) ,
-                  InkWell(
-                    child: ListTile(
-                      title: Text("Scientific Calculator",style: TextStyle(fontSize: 20,color: Colors.white),),
-                    ),
-                    onTap: (){
-                      //Navigator.push(context, MaterialPageRoute(builder: (context) => sci(),)) ;
-                    },
-                  ) ,
-                  Divider(color: Colors.grey,) ,
-                  InkWell(
-                    child: ListTile(
-                      title: Text("Length Converter",style: TextStyle(fontSize: 20,color: Colors.white),),
-                    ),
-                    onTap: (){},
-                  ) ,
-                  Divider(color: Colors.grey,) ,
-                  InkWell(
-                    child: ListTile(
-                      title: Text("Temperature Converter",style: TextStyle(fontSize: 20,color: Colors.white),),
-                    ),
-                    onTap: (){},
-                  ) ,
-                  Divider(color: Colors.grey,) ,
-                  InkWell(
-                    child: ListTile(
-                      title: Text("Volume Converter",style: TextStyle(fontSize: 20,color: Colors.white),),
-                    ),
-                    onTap: (){},
-                  ) ,
-                  Divider(color: Colors.grey,) ,
-                  InkWell(
-                    child: ListTile(
-                      title: Text("Mass Converter",style: TextStyle(fontSize: 20,color: Colors.white),),
-                    ),
-                    onTap: (){},
-                  ) ,
-                  Divider(color: Colors.grey,) ,
-                  InkWell(
-                    child: ListTile(
-                      title: Text("Data Converter",style: TextStyle(fontSize: 20,color: Colors.white),),
-                    ),
-                    onTap: (){},
-                  ) ,
-                  Divider(color: Colors.grey,) ,
-                  InkWell(
-                    child: const ListTile(
-                      title: Text("Speed Converter",style: TextStyle(fontSize: 20,color: Colors.white),),
-                    ),
-                    onTap: (){},
-                  ) ,
-                  Divider(color: Colors.grey,) ,
-                  InkWell(
-                    child: ListTile(
-                      title: Text("Time Converter",style: TextStyle(fontSize: 20,color: Colors.white),),
-                    ),
-                    onTap: (){},
-                  ) ,
-                  Divider(color: Colors.grey,) ,
-                  InkWell(
-                    child: ListTile(
-                      title: Text("Area Converter",style: TextStyle(fontSize: 20,color: Colors.white),),
-                    ),
-                    onTap: (){},
-                  ) ,
-                  Divider(color: Colors.grey,) ,
-                  InkWell(
-                    child: ListTile(
-                      title: Text("Currency Converter",style: TextStyle(fontSize: 20,color: Colors.white),),
-                    ),
-                    onTap: (){},
-                  ) ,
-                  Divider(color: Colors.grey,) ,
-                ],
-              ),
-            ),
-          ),
-          ),
+        drawer: AppDrawer(),
 
         body:Column(
           children: [

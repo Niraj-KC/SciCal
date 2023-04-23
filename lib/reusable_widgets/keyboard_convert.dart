@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'circular_btn.dart';
 
 
-class Keyboard extends StatelessWidget {
+class KeyboardConvert extends StatelessWidget {
   final void Function(String) callback;
 
-  Keyboard({
+  KeyboardConvert({
     required this.callback,
     Key? key}) : super(key: key);
 
@@ -19,21 +19,7 @@ class Keyboard extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // SizedBox(height: 10,) ,
-            Expanded(
-              child: Row(
-                children: [
-                  Expanded(child: CircularBtn(disp: "AC",onTap: callback,color: Colors.white,bgcolor: Colors.orangeAccent,)),
-                  // SizedBox(width: 15,) ,
-                  Expanded(child: CircularBtn(disp: "(",onTap: callback,color: Colors.white,bgcolor: Colors.grey,)),
-                  // SizedBox(width: 15,) ,
-                  Expanded(child: CircularBtn(disp: ")",onTap: callback,color: Colors.white,bgcolor: Colors.grey,)),
-                  // SizedBox(width: 15,) ,
-                  Expanded(child: CircularBtn(disp: "/",onTap: callback,color: Colors.white,bgcolor: Colors.grey,)),
-                ],
-              ),
-            ),
-            // SizedBox(height: 10,) ,
+
             Expanded(
               child: Row(
                 children: [
@@ -43,11 +29,10 @@ class Keyboard extends StatelessWidget {
 
                   Expanded(child: CircularBtn(disp: "9",onTap: callback,color: Colors.black,bgcolor: Colors.grey,)),
 
-                  Expanded(child: CircularBtn(disp: "x",onTap: callback,color: Colors.white,bgcolor: Colors.grey,)),
-                ],
+                  ],
               ),
             ),
-            // SizedBox(height: 10,) ,
+
 
             Expanded(
               child: Row(
@@ -57,12 +42,10 @@ class Keyboard extends StatelessWidget {
                   Expanded(child: CircularBtn(disp: "5",onTap: callback,color: Colors.black,bgcolor: Colors.grey,)),
 
                   Expanded(child: CircularBtn(disp: "6",onTap: callback,color: Colors.black,bgcolor: Colors.grey,)),
-
-                  Expanded(child: CircularBtn(disp: "-",onTap: callback,color: Colors.white,bgcolor: Colors.grey,)),
                 ],
               ),
             ),
-            // SizedBox(height: 10,) ,
+
             Expanded(
               child: Row(
                 children: [
@@ -72,21 +55,19 @@ class Keyboard extends StatelessWidget {
 
                   Expanded(child: CircularBtn(disp: "3",onTap: callback,color: Colors.black,bgcolor: Colors.grey,)),
 
-                  Expanded(child: CircularBtn(disp: "+",onTap: callback,color: Colors.white,bgcolor: Colors.grey,)),
                 ],
               ),
             ),
-            // SizedBox(height: 10,) ,
+
             Expanded(
               child: Row(
                 children: [
-                  Expanded(child: CircularBtn(disp: "%",onTap: callback,color: Colors.black,bgcolor: Colors.grey,)),
+                  Expanded(child: CircularBtn(disp: ".",onTap: callback,color: Colors.black,bgcolor: Colors.grey,)),
 
                   Expanded(child: CircularBtn(disp: "0",onTap: callback,color: Colors.black,bgcolor: Colors.grey,)),
 
-                  Expanded(child: CircularBtn(disp:".",onTap: callback,color: Colors.black,bgcolor: Colors.grey,)),
+                  Expanded(child: CircularBtn(disp:"=",onTap: callback,color: Colors.black,bgcolor: Colors.yellow,)),
 
-                  Expanded(child: CircularBtn(disp: "=",onTap: callback,color: Colors.black,bgcolor: Colors.yellow,)),
                 ],
               ),
             ),
