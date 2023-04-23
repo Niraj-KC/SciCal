@@ -1,4 +1,5 @@
 import 'package:calculator/screens/converter_screen.dart';
+import 'package:calculator/screens/scientific_calculator.dart';
 import 'package:calculator/screens/simple_calculator.dart';
 import 'package:calculator/screens/splashscreen.dart';
 import 'package:calculator/utils/routes.dart';
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         MyRoutes.splash : (context) => SplashScreen(),
         MyRoutes.simpleCal: (context) => SimpleCalculator(),
         MyRoutes.converter : (context) => ConverterScreen(),
+        MyRoutes.scientificCal: (context) => ScientificCalculator(),
       },
     );
   }

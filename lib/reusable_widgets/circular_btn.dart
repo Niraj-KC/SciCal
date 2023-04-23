@@ -7,6 +7,7 @@ class CircularBtn extends StatelessWidget {
   bool isIcon;
   Color color ;
   Color bgcolor ;
+  double textsize;
 
   CircularBtn({
     required this.disp,
@@ -14,7 +15,7 @@ class CircularBtn extends StatelessWidget {
     required this.bgcolor,
     this.isIcon = false,
     this.color  = Colors.black,
-
+    this.textsize = 36,
     Key? key}) : super(key: key);
 
 
@@ -30,7 +31,7 @@ class CircularBtn extends StatelessWidget {
             disp,
             color: color ,
           )
-          :Text(disp,style: TextStyle(fontSize: 36,color:color),),
+          :Text(disp,style: TextStyle(fontSize: textsize, color:color),),
 
         ),
       )

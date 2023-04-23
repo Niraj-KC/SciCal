@@ -25,6 +25,8 @@ class AppDrawer extends StatelessWidget {
                 ),
                 onTap: (){
                   Calculation.convert = "";
+                  Calculation.input = "";
+                  Calculation.output = "";
                   Navigator.of(context, rootNavigator: true).pushNamed(MyRoutes.simpleCal);
                 },
               ) ,
@@ -33,7 +35,12 @@ class AppDrawer extends StatelessWidget {
                 child: const ListTile(
                   title: Text("Scientific Calculator",style: TextStyle(fontSize: 20,color: Colors.white),),
                 ),
-                onTap: (){},
+                onTap: (){
+                  Calculation.convert = "";
+                  Calculation.input = "";
+                  Calculation.output = "";
+                  Navigator.of(context, rootNavigator: true).pushNamed(MyRoutes.scientificCal);
+                },
               ) ,
               const Divider(color: Colors.grey,) ,
               InkWell(

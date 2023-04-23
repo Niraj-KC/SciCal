@@ -4,7 +4,7 @@ import '../Widgets/drawer.dart';
 import '../reusable_widgets/keyboard.dart';
 import 'package:math_expressions/math_expressions.dart';
 
-//import 'sci.dart';
+//import 'scientific_calculator.dart';
 
 class SimpleCalculator extends StatefulWidget {
   const SimpleCalculator({Key? key}) : super(key: key);
@@ -16,7 +16,7 @@ class SimpleCalculator extends StatefulWidget {
 class _SimpleCalculatorState extends State<SimpleCalculator> {
 
   callback(String value){
-    print("object");
+    // print("object");
     setState(() {if (value == "AC"){
       Calculation.input = "";
       Calculation.output = "";
@@ -92,9 +92,9 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
                 InkWell(
 
                   onTap: (){callback("<");},
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 18.0),
-                    child: const Icon(
+                  child: const Padding(
+                    padding: EdgeInsets.only(right: 18.0),
+                    child: Icon(
                       Icons.backspace_outlined,
                       color: Colors.yellowAccent,
                       size: 25,
