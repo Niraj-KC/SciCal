@@ -48,7 +48,7 @@ class _ScientificKeyboard2State extends State<ScientificKeyboard2> {
 
                     Expanded(child: CircularBtn(disp: "nCr",onTap: widget.callback,color: Colors.black,bgcolor: Colors.grey,textsize: 30,)),
 
-                    Expanded(child: CircularBtn(disp: "x⁻¹",onTap: widget.callback,color: Colors.black,bgcolor: Colors.grey,textsize: 30,)),
+                    //Expanded(child: CircularBtn(disp: "x⁻¹",onTap: widget.callback,color: Colors.black,bgcolor: Colors.grey,textsize: 30,)),
                   ],
                 ),
               ),
